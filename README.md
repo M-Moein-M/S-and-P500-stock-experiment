@@ -1,12 +1,50 @@
-# 📈 S&P 500 Dollar Cost Averaging Strategy Comparison
-
-A comprehensive simulation framework comparing different Dollar Cost Averaging (DCA) investment timing strategies using historical S&P 500 data. This project explores whether the specific timing of investments within a given period significantly impacts long-term returns.
-
 ## 🎯 Research Question
 
 **"Does it matter which specific day you invest, or is consistency what truly matters in Dollar Cost Averaging?"**
 
 This simulation tests whether timing matters in DCA strategies by comparing daily investments against weekly and monthly random timing approaches across the same investment periods.
+
+
+# 🔎 Results Summary
+
+A quick, high-visibility snapshot of strategy performance so you see outcomes first.
+
+## 📆 4-Year Horizon (1460 days)
+
+| Strategy | Avg Return | Best | Worst | Std Dev | Success Rate | Risk/Return |
+|----------|------------|------|-------|---------|--------------|-------------|
+| 🥇 Weekly Random | **+24.92%** | +30.80% | +21.68% | 1.70% | 100.0% | 14.63 |
+| 🥈 Monthly Random | **+24.92%** | +31.55% | +21.29% | 1.95% | 100.0% | 12.79 |
+| 🥉 Daily Investment | **+24.90%** | +30.83% | +21.62% | 1.71% | 100.0% | 14.57 |
+
+## 📆 3-Year Horizon (1095 days)
+
+| Strategy | Avg Return | Best | Worst | Std Dev | Success Rate | Risk/Return |
+|----------|------------|------|-------|---------|--------------|-------------|
+| 🥇 Weekly Random | **+13.92%** | +22.63% | +6.27% | 3.74% | 100.0% | 3.72 |
+| 🥈 Daily Investment | **+13.91%** | +22.65% | +6.30% | 3.72% | 100.0% | 3.74 |
+| 🥉 Monthly Random | **+13.82%** | +22.62% | +6.45% | 3.75% | 100.0% | 3.68 |
+
+## 📆 2-Year Horizon (730 days)
+
+| Strategy | Avg Return | Best | Worst | Std Dev | Success Rate | Risk/Return |
+|----------|------------|------|-------|---------|--------------|-------------|
+| 🥇 Daily Investment | **+10.18%** | +20.20% | -6.16% | 7.72% | 90.0% | 1.32 |
+| 🥈 Weekly Random | **+10.14%** | +20.13% | -6.17% | 7.70% | 90.0% | 1.32 |
+| 🥉 Monthly Random | **+10.06%** | +19.61% | -6.41% | 7.68% | 90.0% | 1.31 |
+
+### 💡 Cross-Horizon Takeaways
+
+- **Consistency Wins**: Differences across timing strategies are small within each horizon.
+- **Risk Drops Over Time**: Longer horizons show markedly lower volatility (std dev).
+- **Risk-Adjusted Edge**: For 3–4 years, weekly/daily offer the best risk-adjusted returns.
+- **All Positive Long-Run**: 3–4 year horizons had 100% success rates in simulations.
+
+— See full analyses: [2yrs_multi_strategy_report.md](2yrs_multi_strategy_report.md), [3yrs_multi_strategy_report.md](3yrs_multi_strategy_report.md), [4yrs_multi_strategy_report.md](4yrs_multi_strategy_report.md)
+
+# 📈 S&P 500 Dollar Cost Averaging Strategy Comparison
+
+A comprehensive simulation framework comparing different Dollar Cost Averaging (DCA) investment timing strategies using historical S&P 500 data. This project explores whether the specific timing of investments within a given period significantly impacts long-term returns.
 
 ## 📊 Dataset
 
@@ -20,7 +58,7 @@ This project uses historical S&P 500 stock data from 2013-2018, sourced from [Ka
    ```
 
 2. **Review results:**
-   - Generated report: `3yrs_multi_strategy_report.md`
+   - Generated reports: [2yrs_multi_strategy_report.md](2yrs_multi_strategy_report.md), [3yrs_multi_strategy_report.md](3yrs_multi_strategy_report.md), [4yrs_multi_strategy_report.md](4yrs_multi_strategy_report.md)
    - Console output shows real-time progress and summary statistics
 
 ## 💡 Investment Strategies

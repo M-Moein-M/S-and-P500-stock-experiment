@@ -25,7 +25,7 @@ from strategy import DailyStrategy, WeeklyRandomStrategy, MonthlyRandomStrategy
 DAILY_INVESTMENT = 1.0
 
 # Duration of the experiment in days (365 = 1 year)
-EXPERIMENT_DURATION_DAYS = 365*3
+EXPERIMENT_DURATION_DAYS = 365*1
 
 # Column to use for buying shares: 'open', 'high', 'low', 'close'
 PRICE_COLUMN = 'close'
