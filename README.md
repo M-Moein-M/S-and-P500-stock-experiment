@@ -188,3 +188,8 @@ DAILY_INVESTMENT = 10.0  # $10/day equivalent
 - **Historical Analysis**: Results are based on historical data and do not predict future market performance
 - **Simplified Model**: Real-world investing involves transaction costs, taxes, dividends, and other factors not modeled in this simulation
 - **Data Dependency**: Analysis quality depends on the accuracy and completeness of the historical dataset
+
+## Next Step
+- Consider making a website that people can build their own strategy and compete with each other. The AI would also implement the code and would fit the code into the framework.
+
+
